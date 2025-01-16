@@ -9,15 +9,15 @@ if not isfile("Surge.gg") then
     makefolder("Surge.gg")
  end
  
- local menu = game:GetObjects("rbxassetid://17090554797")[1] 
- local tabholder = menu.bg.bg.bg.bg.bg.bg.main.group
- local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons
+ local menu = game:GetObjects("rbxassetid://77182974124925")[1] 
+ local tabholder = menu.BG.TabList;
+ local tabviewer = menu.BG.Tabs;
  for _, obj in pairs(menu:GetDescendants()) do
     if obj.Name:lower():find('userlabel') then
-        obj.Text = 'active user: <font color="rgb(255, 0, 170)">' .. game.Players.LocalPlayer.Name .. '</font>'
+        obj.Text = 'active user: <font color="rgb(202, 25, 39)">' .. game.Players.LocalPlayer.Name .. '</font>'
     end
     if obj.Name:lower():find('buildlabel') then
-        obj.Text = 'build: <font color="rgb(255, 0, 170)">Public</font>'
+        obj.Text = 'build: <font color="rgb(202, 25, 39)">Public</font>'
     end
  end
  
@@ -315,8 +315,8 @@ end
        [Enum.UserInputType.MouseButton3] = 'MB3'
     }
     
-    menu.BG.Position = UDim2.new(0.5,-menu.BG.Size.X.Offset/2,0.5,-menu.BG.Size.Y.Offset/2)
-    menu.Parent = CloneCore
+    menu.bg.Position = UDim2.new(0.5,-menu.bg.Size.X.Offset/2,0.5,-menu.bg.Size.Y.Offset/2)
+ menu.Parent = game:GetService("CoreGui")
     menu.Name = "Surge.gg_gui"
     local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end)
     local CloneScreenGui = cloneref(Instance.new("ScreenGui"))
