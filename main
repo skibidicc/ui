@@ -34,7 +34,7 @@ repeat
  
  local library = {
     Title = 'Phobia.font color="rgb(245, 66, 230)">cc</font> | <font color="rgb(245, 66, 230)">Pre-Build</font>',
-    AnimatedText = true,
+    AnimatedText = false,
     keybind = Enum.KeyCode.End,
     Colors = {
         libColor = Color3.new(0.952941, 0.356863, 0.874510),
@@ -235,10 +235,7 @@ textTweenEnd:Play()
 end
 end)
  
-local tab = {
-
-    
-}
+local tab = {}
 local groupCount = 0
 local jigCount = 0
 local topStuff = 2000
