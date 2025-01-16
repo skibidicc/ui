@@ -237,11 +237,7 @@ end)
  
 local tab = {
 
-    main = Library:addTab("Combat", "http://www.roblox.com/asset/?id=15178561786"),
-    visuals = Library:addTab("Visuals", "http://www.roblox.com/asset/?id=13321848320"),
-    misc = Library:addTab("Misc", "http://www.roblox.com/asset/?id=7347408509"), 
-    world = Library:addTab("World", "http://www.roblox.com/asset/?id=7347408509"), 
-    settings = Library:addTab("Settings", "http://www.roblox.com/asset/?id=1195605588")
+    
 }
 local groupCount = 0
 local jigCount = 0
